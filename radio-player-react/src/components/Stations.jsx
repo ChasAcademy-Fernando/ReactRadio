@@ -20,14 +20,15 @@ const Stations = () => {
         
       },[]);
     return ( 
-    <>
+    <div className=" space-y-4">
+        <h1 className=" text-7xl text-center">ULTIMATE RADIO PLAYER</h1>
         {
             radioStations && radioStations.map((station)=>
             <Station image={station.image} bg={station.color} name={station.name} audio={station.liveaudio.url} key={station.id}/>
             )
         }
         
-    </>
+    </div>
      );
 }
  
